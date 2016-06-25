@@ -1,27 +1,25 @@
 package com.pixelduke.javafx.ribbon.tests;
 
+import com.pixelduke.javafx.ribbon.Gallery;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.scenicview.ScenicView;
+//import org.scenicview.ScenicView;
 
 import java.net.URL;
 
 /**
- * Created by pedro_000 on 1/22/14.
+ * Created by pedro_000 on 1/13/2015.
  */
-public class RibbonCreatedThroughFXMLTest extends Application {
-    static final String RESOURCE = "RibbonFXML.fxml";
-    static final String STYLE_SHEET = "../resource/fxribbon.css";
+public class GalleryTest extends Application {
+    static final String RESOURCE = "GalleryTest.fxml";
 
     @Override
-    public void start(Stage primaryStage) throws Exception
-    {
+    public void start(Stage primaryStage) throws Exception {
         URL resource = getClass().getResource(RESOURCE);
         Parent root = FXMLLoader.load(resource);
-        root.getStylesheets().add(getClass().getResource(STYLE_SHEET).toExternalForm());
         Scene scene = new Scene(root);
 
 //        ScenicView.show(scene);

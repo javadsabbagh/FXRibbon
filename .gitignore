@@ -39,3 +39,6 @@ lib/
 # proprietary images
 *.png
 *.gif
+/.idea
+/target
+/*.iml
